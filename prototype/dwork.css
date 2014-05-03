@@ -18,6 +18,21 @@
 	padding-right: 0px;
 
 }
+
+.nav > li > a{
+	color: white;
+}
+
+.nav > li > a:hover{
+	color: white;
+	background-color: green;
+
+}
+
+.nav-tabs{
+	border-bottom: none;
+}
+
 .subheader {
 	font-family: inherit;
 	font-size: 2.0em;
