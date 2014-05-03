@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <head>
-	<meta charset = "UTF-8">
-	<title>"Delta Work" </title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="dwork.css">
+	
+	<meta charset="utf8">
+	<title>Delta Work </title>
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.css">
+	-->
 	<script src="jquery-2.1.1.js"></script>
-	<script src="bootstrap.js"></script>
+	<script src="underscore.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.js" ></script>
+	<link rel="stylesheet" type="text/css" href="dwork.css">
+	
+	<!-- <script src="bootstrap.js"></script>
+-->
 </head>
 
 
 <body>
+
+<script>
+  
+  $.getJSON( "http://api.genability.com/rest/prices?appId=894a0759-f682-4760-b160-ecefba051e7b&appKey=ad02f158-8b1d-4cac-8fda-8d21c8248752&zipCode=94115&customerClasses=RESIDENTIAL&tariffTypes=DEFAULT", function(data){
+
+	var tariffs = _.each(data.results, function(tariff) {
+		tariff["roundedRate"] = tariff.rateMean.toFixed(2);
+	}) ;	
+  	var template= $('#tariffInfo').html();
+  	var output = Mustache.render(template, {tariffs: tariffs});
+  	$('#tariffInHere').html(output);
+  	//math 
+
+  	 });
+  	
+  	// GET /rest/public/calculate/{masterTariffId}
+	
+//	api.genability.com/rest/public/tariffs?appId=894a0759-f682-4760-b160-ecefba051e7b&appKey=ad02f158-8b1d-4cac-8fda-8d21c8248752&zipCode=94115&customerClasses=RESIDENTIAL&tariffTypes=DEFAULT
+
+</script>
+
+<script id ="tariffInfo" type="text/template">
+	{{#tariffs}}
+		{{roundedRate}}
+
+	{{/tariffs}}
+</script>
 <header>
 
 </header>
 
 <h1>DWork</h1>
 <p>Solar Power to the people</p>
+<div id = "tariffInHere">
+
+
+</div>
 
 <footer>
 
 </footer>
 
 </body>
+
+</HTML>
