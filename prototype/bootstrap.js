@@ -1,5 +1,3 @@
-bplist00—_WebMainResource’	
-_WebResourceMIMEType_WebResourceTextEncodingName_WebResourceFrameName^WebResourceURL_WebResourceData_text/javascriptUUTF-8P_Rfile:///Users/heatherhargreaves/Downloads/bootstrap-3.1.1%202/dist/js/bootstrap.jsO€g<html><head></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">/*!
  * Bootstrap v3.1.1 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -1950,4 +1948,5 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   })
 
 }(jQuery);
-</pre></body></html>    ( > \ s Ç î ¶ ¨ ≠                           ‹m
+</pre></body></html>    ( > \ s Ç î ¶ ¨ ≠             
+              ‹m

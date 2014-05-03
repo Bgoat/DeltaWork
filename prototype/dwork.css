@@ -1,11 +1,29 @@
-h1 {
-	font-family:;
-	font-size:;
-	color:;
+.header {
+	height: 3.5em;
+	background-color: rgb(55, 55, 172);
+	font-size: 3.5em;
+	font-family: inherit;
+	padding-left: 20px;
+	color: white;
+
 }
 
+.nav {
+	float: right;
+	padding-right: 0px;
+
+}
+h1 {
+	font-family: inherit;
+	font-size:;
+	color: rgb(55, 55, 172);
+	text-align: center;
+}
+
+
 p {
-	font-family: ;
+	font-family: inherit;
 font-size:;
-color:;
+color: rgb(55, 55, 172);
+text-align: center;
 }
