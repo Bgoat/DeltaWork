@@ -49,7 +49,10 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <div id="tariffInHere" class="container"></div>
+    <div id="tariffInHere" class="container tarrif-padding"></div>
+    <div id="renewInHere" class="container tarrif-padding"></div>
+    <div id="nameInHere" class="container tarrif-padding"></div>
+    <div id="renewNameInHere" class="container tarrif-padding"></div>
 
     <div class="row"><!-- Plan comparison display -->
       <div class="col-xs-5">
@@ -117,13 +120,6 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.js" ></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="dwork.js"></script>
-    <script id ="tariffInfo" type="text/template">
-      {{#tariffs}}
-        <div class="output">{{roundedRate}}</div>
-      {{/tariffs}}
-    </script>
-
-
   </body>
 </html>
 
