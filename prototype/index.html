@@ -55,6 +55,11 @@
 
     <div id = "tariffInHere"></div>
     
+    <div class="row"><!-- Plan comparison display -->
+      <div class="  ">.col-xs-6</div>
+      <div class="  ">.col-xs-6</div>
+    </div><!--/. Plan comparison display -->
+    
     <!-- javascript -->
     <script src="jquery-2.1.1.js"></script>
     <script src="underscore.js"></script>
@@ -77,8 +82,11 @@
     </script>
     <script id ="tariffInfo" type="text/template">
       {{#tariffs}}
-        {{roundedRate}}
+        <div class="output">{{roundedRate}}</div>
       {{/tariffs}}
     </script>
+
+
   </body>
 </html>
+
