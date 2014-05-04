@@ -20,6 +20,9 @@ dworkApp.Binder.prototype = {
     $('#zip-submit').on("click", function(e) {
       e.preventDefault();
       console.log("enter button clicked");
+      //do ajax call here, get tariff back
+      //once it returns:
+      $('button.close').click()
     });
   }
 };
