@@ -1,10 +1,45 @@
-.tarrif-padding{
-  width: 300px;
-  background-color: #F7F7F7;
-  border: 3px solid #DDD;
-  border-radius: 5px;
-  display: block;
-  clear:both;
+/**{
+  border: 1px blue solid;
+}
+*/
+ul.nav a:hover {
+  padding-bottom: 12.5px;
+}
+
+.result-box{
+  background-color: #FFF1D4;
+  width: 60%;
+  margin: auto;
+  margin-top: 10em;
+  border: #E5CEA0 solid 0.5em;
+  border-radius: 2em;
+}
+
+.old-tariff{
+  background-color: red ;
+  margin-right: 0px;
+}
+
+.new-tariff{
+  background-color: green;
+  margin-left: 0px;
+}
+
+.tariff-result{
+  margin: auto;
+  text-align: center;
+  font-size: 5em;
+  padding: 0.5em 0em;
+}
+
+.tab-modal{
+  color: rgba(148, 19, 7, 0.79);
+}
+
+.solar-install-container{
+  width: 85%;
+  height: 20em;
+  margin-top: 4em;
 }
 
 .navbar-header {
