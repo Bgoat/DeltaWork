@@ -1,7 +1,32 @@
+/*light brown: CBA773
+light green-brown: BC9E60
+cool green: 4B8B68
+brown: 8B5A32
+dark brown: 382414;
+*/
+
+
 /**{
   border: 1px blue solid;
 }
 */
+body{
+  font-family: 'Droid Sans', sans-serif;
+}
+
+#compare-arrow{
+  font-size: 10em;
+  margin-top: 1.2em;
+  margin-left: 30%;
+  color: #382414;
+}
+
+.per-kwhr{
+  width: 20%;
+  margin-left: 40%;
+  margin-bottom: 20px;
+}
+
 ul.nav a:hover {
   padding-bottom: 12.5px;
 }
@@ -15,6 +40,7 @@ ul.nav a:hover {
   border-radius: 2em;
 }
 
+
 .panel-box{
   background-color: #FFF1D4;
   width: 60%;
@@ -25,15 +51,20 @@ ul.nav a:hover {
   text-align: center;
   
   
+
+.result-box p{
+  color: white;
+  font-size: 2em;
+
 }
 
 .old-tariff{
-  background-color: red ;
+  background-color: #BC9E60 ;
   margin-right: 0px;
 }
 
 .new-tariff{
-  background-color: green;
+  background-color: #CBA773;
   margin-left: 0px;
 }
 
@@ -41,7 +72,8 @@ ul.nav a:hover {
   margin: auto;
   text-align: center;
   font-size: 5em;
-  padding: 0.5em 0em;
+  padding: 0 0;
+  padding-top: 0.5em;
 }
 
 .tab-modal{
@@ -49,14 +81,15 @@ ul.nav a:hover {
 }
 
 .solar-install-container{
-  width: 85%;
+
+  width: 66.66666%;
   height: 8em;
   margin-top: 4em;
 }
 
 .navbar-header {
 	height: 2.5em;
-	background-color: rgba(148, 19, 7, 0.79);
+	background-color: rgba(139, 90, 50, 0.79);
 	font-size: 1.5em;
 	font-family: inherit;
 	padding-left: 20px;
@@ -82,9 +115,9 @@ ul.nav a:hover {
 
 .nav > li > a:hover{
 	color: white;
-	background-color: rgba(235, 144, 135, 0.79);
+	background-color: #E5CEA0;
 	border: 1px;
-	border-color: rgba(235, 144, 135, 0.79);
+	border-color: #382414;
 }
 
 .nav-tabs{
@@ -95,7 +128,7 @@ ul.nav a:hover {
 .subheader {
 	font-family: inherit;
 	font-size: 2.0em;
-	color: rgba(148, 19, 7, 0.79);
+	color: #382414;
 	text-align: center;
 	padding-top: 1.85em;
 	width: 100%;
@@ -105,7 +138,7 @@ ul.nav a:hover {
 
 .output {
 	text-align: center;
-	color: rgba(148, 19, 7, 0.79);
+	color: #382414;
 	font-weight: bolder;
 	font-size: 2.5em;
 	background-color: transparent;
@@ -131,7 +164,7 @@ body {
 }
 
 p {
-	color: rgba(148, 19, 7, 0.79);
+	color: #382414;
 	font-weight: bolder;
 }
 
