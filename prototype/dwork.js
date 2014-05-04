@@ -2,35 +2,45 @@ $(document).ready (function(){
   var options = {};
   $('#zip-modal').modal(options);
 
-  var binder = new dworkApp.Binder();
-  binder.bind();
-
+  var dworkController = new dworkApp.Controller();
+  dworkController.init();
 });
 
-function dworkApp(){};
+var dworkApp = {};
 
-dworkApp.Binder = function() {};
+dworkApp.Controller = function() {};
+
+dworkApp.Controller.prototype = {
+  init: function() {
+    var binder = new dworkApp.Binder(this);
+    binder.bind();
+  }
+};
+
+dworkApp.Binder = function(controller) {
+  this.controller = controller;
+};
 
 dworkApp.Binder.prototype = {
   bind: function() {
-    this.bindEnterZip();
+    this.bindEnterZip(this.controller);
   },
 
-  bindEnterZip: function() {
+  bindEnterZip: function(controller) {
     $('#zip-submit').on("click", function(e) {
       e.preventDefault();
-      console.log("enter button clicked");
+      // console.log("enter button clicked");
       var userZip = $('#zipcode').val();
+
       $.getJSON( "http://api.genability.com/rest/prices?appId=894a0759-f682-4760-b160-ecefba051e7b&appKey=ad02f158-8b1d-4cac-8fda-8d21c8248752&zipCode=" + userZip + "&customerClasses=RESIDENTIAL&tariffTypes=DEFAULT", function(data){
         var tariffs = _.each(data.results, function(tariff) {
           tariff["roundedRate"] = tariff.rateMean.toFixed(2);
-        })
+        });
         var template= $('#tariffInfo').html();
         var output = Mustache.render(template, {tariffs: tariffs});
         $('#tariffInHere').html(output);
-        $('button.close').click()
-      })
+        $('button.close').click();
+      });
     });
   }
-}
-
+};
