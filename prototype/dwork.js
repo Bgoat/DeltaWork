@@ -1,6 +1,6 @@
 $(document).ready (function(){
   var options = {};
-  $('.modal').modal(options);
+  $('#zip-modal').modal(options);
 
   var binder = new dworkApp.Binder();
   binder.bind();

@@ -1,4 +1,11 @@
-
+.tarrif-padding{
+  width: 300px;
+  background-color: #F7F7F7;
+  border: 3px solid #DDD;
+  border-radius: 5px;
+  display: block;
+  clear:both;
+}
 
 .navbar-header {
 	height: 2.5em;
@@ -67,8 +74,8 @@ p {
 	font-weight: bolder;
 }
 
-html { 
-  background: url(stockvault-brightness116234.jpg) no-repeat center center fixed; 
+html {
+  background: url(stockvault-brightness116234.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
