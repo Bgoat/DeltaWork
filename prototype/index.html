@@ -15,9 +15,9 @@
       <div class="header">
         Delta Work
         <ul class="nav nav-tabs">
-          <li class="active"><a href="/index.html">Home</a></li>
-          <li><a href="whysolarpower.html">Why Solar Power</a></li>
-          <li><a href="Ourmission.html">Our Mission</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#whySolarModal">Why Solar Power</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#ourMissionModal">Our Mission</a></li>
         </ul>
         <div class="subheader">
           Solar power to the people
@@ -25,8 +25,8 @@
       </div>
     </div>
 
-    <!--modal-->
-    <div class="modal fade">
+    <!--modal for zipcode entry-->
+    <div class="modal fade" id="zip-modal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -49,12 +49,43 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <div id = "tariffInHere"></div>
+    <div id="tariffInHere" class="container tarrif-padding"></div>
 
     <div class="row"><!-- Plan comparison display -->
       <div class="  ">.col-xs-6</div>
       <div class="  ">.col-xs-6</div>
     </div><!--/. Plan comparison display -->
+
+    <!-- modal for "why solar power" -->
+    <div class="modal" id="whySolarModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Why Go Solar?</h4>
+            </div>
+            <div class="modal-body">
+                <h3>One taste what the planet really needs world peace didgeridoo planetary transition blue whale, ponytail innate capacity diva cup. Tofu spiral dynamics talking stick healing energy farm to table, cosmic dharma jasmine. Raw cacao to end suffering heart-opening midwifery, rain dance rites of passage dance dome rediscovery emotional release. Tantra five rhythms lucid dreaming, fair trade clarity prius co-create free tibet loving kindness.</h3>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal for "our mission" -->
+    <div class="modal" id="ourMissionModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Why Go Solar?</h4>
+            </div>
+            <div class="modal-body">
+                <h3>Our fantastic mission is to bring awareness of renewables to the masses. We believe that renewable energy is a great investment in our future. We are providing the connections so the average person can contribute to humanity's shared, bright, future.</h3>
+                <h3>We would love for you to join us in this endeavour by committing to renewable energy and spreading our website to all your friends!</h3>
+            </div>
+        </div>
+      </div>
+    </div>
 
     <!-- javascript -->
     <script src="jquery-2.1.1.js"></script>
