@@ -38,8 +38,8 @@
             <!--modal form-->
             <form class="form-inline" role="form">
               <div class="form-group">
-                <label class="sr-only" for="Zipcode">Zipcode</label>
-                <input type="Zipcode" class="form-control" id="Zipcode" placeholder="Enter zipcode">
+                <label class="sr-only" for="zipcode">Zipcode</label>
+                <input type="zipcode" class="form-control" id="zipcode" placeholder="Enter zipcode">
               </div>
                 <button type="submit" class="btn btn-default" id="zip-submit">zip lookup</button>
             </form>
@@ -57,20 +57,6 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.js" ></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="dwork.js"></script>
-    <script>
-    //   function renderTariff(e) {
-    //     var zip = $('#Zipcode').val();
-    //     $.getJSON( "http://api.genability.com/rest/prices?appId=894a0759-f682-4760-b160-ecefba051e7b&appKey=ad02f158-8b1d-4cac-8fda-8d21c8248752&zipCode=" + zip + "&customerClasses=RESIDENTIAL&tariffTypes=DEFAULT", function(data){
-    //       var tariffs = _.each(data.results, function(tariff) {
-    //         tariff["roundedRate"] = tariff.rateMean.toFixed(2);
-    //       }) ;
-    //       var template= $('#tariffInfo').html();
-    //       var output = Mustache.render(template, {tariffs: tariffs});
-    //       $('#tariffInHere').html(output);
-    //       //math
-    //     });
-    //   }
-    </script>
     <script id ="tariffInfo" type="text/template">
       {{#tariffs}}
         {{roundedRate}}
