@@ -37,8 +37,8 @@ dworkApp.Controller.prototype = {
   getNameOnZip: function(userZip) {
     $.getJSON("http://api.genability.com/rest/public/lses?appId=894a0759-f682-4760-b160-ecefba051e7b&appKey=ad02f158-8b1d-4cac-8fda-8d21c8248752&zipCode=" + userZip + "&customerClasses=RESIDENTIAL&tariffTypes=DEFAULT", function(data){
       var outputName = data.results[0].name;
-      $('#nameInHere').html("<p>" + outputName + "</p>");
-      var outputRenewName = "<p>Oasis Energy</p>";
+      $('#nameInHere').html("<div class='util-name'>" + outputName + "</div>");
+      var outputRenewName = "<div class='util-name'>Oasis Energy</div>";
       $('#renewNameInHere').html(outputRenewName);
     });
   }
