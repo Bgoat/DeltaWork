@@ -18,14 +18,28 @@ dworkApp.Controller.prototype = {
     binder.bind();
   },
 
+  getSavingsDiff: function(outputTariff, outputRenew){
+    var oldCost = 400 * outputTariff;
+    var newCost = 400 * outputRenew;
+    var diff = newCost - oldCost;
+    var beers = (diff/8).toFixed(2);
+    $('#BeerCost').html(beers);
+    console.log(beers);
+  },
+
   getTariffOnZip: function(userZip) {
     $.getJSON("http://api.genability.com/rest/prices?appId=894a0759-f682-4760-b160-ecefba051e7b&appKey=ad02f158-8b1d-4cac-8fda-8d21c8248752&zipCode=" + userZip + "&customerClasses=RESIDENTIAL&tariffTypes=DEFAULT", function(data){
       var outputTariff = data.results[0].rateMean.toFixed(2);
       $('#tariffInHere').html(outputTariff);
       var outputRenew = (data.results[0].rateMean * 1.08).toFixed(2);
       $('#renewInHere').html(outputRenew);
-    });
+      this.getSavingsDiff(outputTariff, outputRenew);
+    }.bind(this));
   },
+
+
+
+
 
   getNameOnZip: function(userZip) {
     $.getJSON("http://api.genability.com/rest/public/lses?appId=894a0759-f682-4760-b160-ecefba051e7b&appKey=ad02f158-8b1d-4cac-8fda-8d21c8248752&zipCode=" + userZip + "&customerClasses=RESIDENTIAL&tariffTypes=DEFAULT", function(data){
