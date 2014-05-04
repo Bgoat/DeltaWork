@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="dwork.css">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
@@ -16,7 +15,7 @@
       <div class="header">
         Delta Work
         <ul class="nav nav-tabs">
-          <li class="active"><a href="index.html">Lookup New Zip</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
           <li><a href="#" data-toggle="modal" data-target="#whySolarModal">Why Solar Power</a></li>
           <li><a href="#" data-toggle="modal" data-target="#ourMissionModal">Our Mission</a></li>
         </ul>
@@ -50,27 +49,24 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-
+    
     <div class="row"><!-- Plan comparison display -->
       <div class="col-xs-5">
         <div class="result-box old-tariff">
           <div id="tariffInHere" class="tariff-result" >
+            
           </div>
-          <div class="per-kwhr">per kW/hour</div>
         <div id="nameInHere" class="container tarrif-padding"></div>
-
+    
         </div>
       </div>
       <div class="col-xs-2">
-        <div class="glyphicon glyphicon-arrow-right" id="compare-arrow">
-
-        </div>
+        Arrow goes here
       </div>
       <div class="col-xs-5">
         <div class="result-box new-tariff">
           <div id="renewInHere" class="tariff-result">
           </div>
-          <div class="per-kwhr">per kW/hour</div>
           <div id="renewNameInHere" class="container tarrif-padding"></div>
           </div>
       </div>
@@ -87,9 +83,9 @@
 
     <div class="row">
       <div class="col-xs-12">
-          <div id = "BeerCost"></div> 
+          
           <div class="solar-install-container panel-box">
-            Solar Panels stuff
+            Want to make energy and MONEY?? Get solar panels from our friends:
           </div>
       </div>
     </div>
@@ -100,15 +96,15 @@
         <div class="col-md-3">
         </div>
         <div class="col-md-2">
-          <img src="sunRun.jpg" alt="sunFun">
+          <a href="http://www.sunrun.com"><img src="sunRun.jpg" alt="sunFun"></a>
         </div>
 
         <div class="col-md-2">
-          <img src="SolarCity_CertifiedPartner_Logo.jpg" alt="Solar City">
+          <a href="http://www.solarcity.com"><img src="SolarCity_CertifiedPartner_Logo.jpg" alt="Solar City"></a>
         </div>
 
         <div class="col-md-2">
-          <img src="OneRoof.png" alt="One Roof">  
+          <a href="http://www.oneroofenergy.com"><img src="OneRoof.png" alt="One Roof"></a>  
         </div>
         
         <div class="col-md-3">  
@@ -152,6 +148,7 @@
     <!-- javascript -->
     <script src="jquery-2.1.1.js"></script>
     <script src="underscore.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.js" ></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="dwork.js"></script>
   </body>
