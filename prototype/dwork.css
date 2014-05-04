@@ -1,16 +1,17 @@
 
 
 .navbar-header {
-	height: 3.5em;
+	height: 2.5em;
 	background-color: rgba(148, 19, 7, 0.79);
 	font-size: 1.5em;
 	font-family: inherit;
 	padding-left: 20px;
 	color: white;
 	width: 100%;
+}
 
-
-
+.h1{
+	font-size: 2.5em;
 }
 
 .nav {
@@ -21,16 +22,20 @@
 
 .nav > li > a{
 	color: white;
+	border: 1px;
+	border-color: rgba(235, 144, 135, 0.79);
 }
 
 .nav > li > a:hover{
 	color: white;
-	background-color: green;
-
+	background-color: rgba(235, 144, 135, 0.79);
+	border: 1px;
+	border-color: rgba(235, 144, 135, 0.79);
 }
 
 .nav-tabs{
 	border-bottom: none;
+	border: none;
 }
 
 .subheader {
@@ -44,7 +49,23 @@
 	font-weight: bold;
 }
 
+.output {
+	text-align: center;
+	color: rgba(148, 19, 7, 0.79);
+	font-weight: bolder;
+	font-size: 2.5em;
+	background-color: transparent;
 
+}
+
+body {
+	background-color: transparent;
+}
+
+p {
+	color: rgba(148, 19, 7, 0.79);
+	font-weight: bolder;
+}
 
 html { 
   background: url(stockvault-brightness116234.jpg) no-repeat center center fixed; 
