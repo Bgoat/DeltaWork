@@ -167,8 +167,10 @@ ul.nav a:hover {
 }
 
 .solar-panels{
-	margin-top: 3em;
-
+	margin-top: 1em;
+	text-align: center;
+	font-size: 2.0em;
+	color: #382414
 }
 
 img{
