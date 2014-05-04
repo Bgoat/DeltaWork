@@ -14,11 +14,21 @@ body{
   font-family: 'Droid Sans', sans-serif;
 }
 
+#BeerCost{
+  text-align: center;
+}
+
+#BeerCost h2{
+  font-style: italic;
+  color: #8B5A32;
+}
+
 .util-name{
  color: white;
   font-size: 2em;
   font-weight: bolder;
   width: 100%;
+  text-align:left;
 }
 
 #compare-arrow{
@@ -39,6 +49,7 @@ ul.nav a:hover {
 }
 
 .result-box{
+  text-align:center;
   background-color: #FFF1D4;
   width: 60%;
   margin: auto;
@@ -63,7 +74,8 @@ ul.nav a:hover {
 .result-box p{
   color: white;
   font-size: 2em;
-
+  margin: 0 0;
+  padding: 0 0 ;
 }
 
 .old-tariff{
@@ -81,7 +93,6 @@ ul.nav a:hover {
   text-align: center;
   font-size: 5em;
   padding: 0 0;
-  padding-top: 0.5em;
 }
 
 .tab-modal{
@@ -101,7 +112,7 @@ ul.nav a:hover {
   text-align: left;
 }
 
-.solar-install-container{
+.beer-container{
 
   width: 66.66666%;
   height: 8em;

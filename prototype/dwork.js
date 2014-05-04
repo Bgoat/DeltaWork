@@ -21,7 +21,7 @@ dworkApp.Controller.prototype = {
     var newCost = 400 * outputRenew;
     var diff = newCost - oldCost;
     var beers = (diff/800).toFixed(2);
-    $('#BeerCost').html(beers);
+    $('#BeerCost').html("<h2>For the average American household, that's equivalent to ~"+ beers + " beers per month.</h2>");
   },
 
   getTariffOnZip: function(userZip) {
