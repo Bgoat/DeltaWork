@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="dwork.css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
@@ -15,7 +16,7 @@
       <div class="header">
         Delta Work
         <ul class="nav nav-tabs">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="index.html">Lookup New Zip</a></li>
           <li><a href="#" data-toggle="modal" data-target="#whySolarModal">Why Solar Power</a></li>
           <li><a href="#" data-toggle="modal" data-target="#ourMissionModal">Our Mission</a></li>
         </ul>
@@ -49,24 +50,27 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    
+
     <div class="row"><!-- Plan comparison display -->
       <div class="col-xs-5">
         <div class="result-box old-tariff">
           <div id="tariffInHere" class="tariff-result" >
-            
           </div>
+          <div class="per-kwhr">per kW/hour</div>
         <div id="nameInHere" class="container tarrif-padding"></div>
-    
+
         </div>
       </div>
       <div class="col-xs-2">
-        Arrow goes here
+        <div class="glyphicon glyphicon-arrow-right" id="compare-arrow">
+
+        </div>
       </div>
       <div class="col-xs-5">
         <div class="result-box new-tariff">
           <div id="renewInHere" class="tariff-result">
           </div>
+          <div class="per-kwhr">per kW/hour</div>
           <div id="renewNameInHere" class="container tarrif-padding"></div>
           </div>
       </div>
@@ -115,7 +119,6 @@
     <!-- javascript -->
     <script src="jquery-2.1.1.js"></script>
     <script src="underscore.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.js" ></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="dwork.js"></script>
   </body>

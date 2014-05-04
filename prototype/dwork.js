@@ -20,18 +20,18 @@ dworkApp.Controller.prototype = {
 
   getTariffOnZip: function(userZip) {
     $.getJSON("http://api.genability.com/rest/prices?appId=894a0759-f682-4760-b160-ecefba051e7b&appKey=ad02f158-8b1d-4cac-8fda-8d21c8248752&zipCode=" + userZip + "&customerClasses=RESIDENTIAL&tariffTypes=DEFAULT", function(data){
-      var outputTariff = data.results[0].rateMean.toFixed(2);
-      $('#tariffInHere').html(outputTariff);
-      var outputRenew = (data.results[0].rateMean * 1.08).toFixed(2);
-      $('#renewInHere').html(outputRenew);
+      var outputTariff = data.results[0].rateMean.toFixed(2) * 100;
+      $('#tariffInHere').html(outputTariff + "&cent;");
+      var outputRenew = (data.results[0].rateMean * 108).toFixed(0);
+      $('#renewInHere').html(outputRenew + "&cent;");
     });
   },
 
   getNameOnZip: function(userZip) {
     $.getJSON("http://api.genability.com/rest/public/lses?appId=894a0759-f682-4760-b160-ecefba051e7b&appKey=ad02f158-8b1d-4cac-8fda-8d21c8248752&zipCode=" + userZip + "&customerClasses=RESIDENTIAL&tariffTypes=DEFAULT", function(data){
       var outputName = data.results[0].name;
-      $('#nameInHere').html(outputName);
-      var outputRenewName = "Oasis Energy";
+      $('#nameInHere').html("<p>" + outputName + "</p>");
+      var outputRenewName = "<p>Oasis Energy</p>";
       $('#renewNameInHere').html(outputRenewName);
     });
   }
