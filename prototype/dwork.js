@@ -17,7 +17,8 @@ dworkApp.Binder.prototype = {
   },
 
   bindEnterZip: function() {
-    $('.btn.btn-primary').on("click", function() {
+    $('#zip-submit').on("click", function(e) {
+      e.preventDefault();
       console.log("enter button clicked");
     });
   }
